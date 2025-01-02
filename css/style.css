@@ -1,64 +1,66 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
 }
 
 .header {
     background-color: #FFA500;
-    color: white;
     text-align: center;
     padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
     flex-shrink: 0;
 }
 
-.layout {
+.container {
     display: flex;
     flex: 1;
-    width: 100%;
+    height: calc(100vh - 100px); /* Resta el espacio del header y footer */
 }
 
 .nav {
     background-color: #0000FF;
     color: white;
-    width: 160px;
-    height: auto;
-    flex-shrink: 0;
+    width: 20%;
     padding: 1rem;
-    text-align: center;
+    flex-shrink: 0;
 }
 
 .nav ul {
     list-style: none;
-    padding: 0;
-}
-
-.nav li {
-    margin: 1rem 0;
 }
 
 .nav a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
 .main {
-    background-color: #008000; 
-    flex: 1;
-    padding: 1rem;
-    color: white;
-    text-align: center;
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    background-color: #008000; 
+    color: white;
+    padding: 1rem;
 }
 
-.img{
+.img {
     width: 150px;
-    height: auto;
+    height: 150px;
+    border-radius: 50%; /* Para redondear la imagen */
+    flex-shrink: 0;
+}
+
+.content {
+    flex: 1;
 }
 
 .footer {
@@ -66,5 +68,6 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
+    height: 50px;
     flex-shrink: 0;
 }
