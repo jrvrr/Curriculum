@@ -11,7 +11,7 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
-    flex-shrink: 10;
+    flex-shrink: 0;
 }
 
 .layout {
@@ -51,6 +51,14 @@ body {
     padding: 1rem;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.img{
+    width: 150px;
+    height: auto;
 }
 
 .footer {
